@@ -32,35 +32,45 @@ $grid.isotope({filter:filtervalue});
 
 });
 
-// var count=1;
-// var wishitem= document.querySelector("#wish-item");
-// for(var i=0;i<document.querySelectorAll(".bottom-part .btn").length;i++){
+// wishlist card added java script//
+var sum=0;
+var wishitem= document.querySelector("#wish-item");
+for(var i=0;i<document.querySelectorAll(".bottom-part .btn").length;i++){
   
 
-//    document.querySelectorAll(".bottom-part .btn")[i].addEventListener("click",function(){
-//        console.log("clicked");
-//        wishitem.textContent=count;
-//        console.log(count);
-//        count++;
+   document.querySelectorAll(".bottom-part .btn i")[i].addEventListener("click",function(){
+  
+   if(this.flag==0){
+     console.log("declicked");
+     this.flag=1;
+     this.style.color="black";
+    
+     sum--;
+     wishitem.textContent=sum;
+     
+       console.log(sum);
+      }
+       else{
+
+        console.log("clicked");
+        this.flag=0;
+        this.style.color="red";
+      
+        sum++;
+        wishitem.textContent=sum;
+        
+
+          console.log(sum);
+         
+          
+       }
 
        
 
-//    })
-// }
-// var count=0;
+    });
+ } 
 
-// $(".bottom-part .btn i").toggle(
-//    function(){ 
-//     count++;
-//     $("#wish-item").textContent=count;
-//      console.log(count);},
-
-//     function(){ 
-//     count--;
-//     $("#wish-item").textContent=count;
-//     console.log(count);},
-
-// );
+ 
 
 })
 

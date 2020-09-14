@@ -681,10 +681,29 @@ footer p { color: white; }
       }
     .add-wish{
         padding:2px;
+
     }
     .tm-section-2{
         background-image: url("");
     }
+/* .price-below{
+    display:none;
+}
+.tm-recommended-place:hover .price-below{
+    display:block;
+    transform:translateY(10px);
+
+
+}
+.tm-recommended-place:hover .tm-recommended-description-box{
+    padding-bottom:10px ;
+} */
+
+
+
+.grid-item .item{
+    width:350px;
+}
 
 #google-map { height: 600px; }
 
