@@ -2,7 +2,7 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 300;
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
 }
 
 a, button { transition: all 0.3s ease; }
@@ -480,12 +480,12 @@ footer p { color: white; }
     z-index: 1000;
 }
 
-.form-control {
+.tm-section-search .form-control {
     background-color: #f5f5f5;
     border: none;
 }
 
-.form-control:focus {
+.tm-section-search .form-control:focus {
     border-color: #69c6ba;
     box-shadow: 0 0 0 0.1rem #69c6babf;
 }
@@ -707,6 +707,185 @@ footer p { color: white; }
 
 #google-map { height: 600px; }
 
+
+/*product page styling */
+
+button, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .font-balo {
+    font-family: "Baloo Tamma 2", cursive;
+  }
+  
+  .font-rubik {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .font-rale {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .font_size_14 {
+    font-size: 14px;
+  }
+  
+  .font_size_12 {
+    font-size: 12px;
+  }
+  
+  .font_size_16 {
+    font-size: 16px;
+  }
+  
+  .font_size_20 {
+    font-size: 20px;
+  }
+  
+  .font_size_25 {
+    font-size: 25px;
+  }
+  .card-option .col-md-2:hover{
+      border:1px solid brown;
+
+  }
+  #bannerarea .owl-carousel .owl-dots{
+     display:none;
+
+  }
+
+ /* .animation i:hover{
+color:red;
+ }
+ */
+
+
+
+ .heart, .heart1{
+     width:100%;
+     display:flex;
+     justify-content: space-around;
+     position:absolute;
+     align-items: center;
+     bottom:0;
+
+ }
+ .heart i{
+    
+    
+     display:none;
+    
+ }
+ .heart1 i{
+display:flex;
+animation: heart-anime 4s linear;
+font-size:30px ;
+z-index:10000;
+   
+ }
+ 
+ @keyframes heart-anime{
+     0%{
+         transform:translateY(0);
+         opacity:0;
+     }
+     50%{
+       
+        opacity:1;
+    }
+    70%{
+       
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-80vh);
+        opacity:0;
+    }
+
+ }
+ .heart1 i:nth-child(1){
+     animation-delay:0.2s ;
+ }
+ .heart1 i:nth-child(2){
+    animation-delay:0.3s ;
+}
+.heart1 i:nth-child(3){
+    animation-delay:0s ;
+}
+.heart1 i:nth-child(4){
+    animation-delay:0.1s ;
+}
+.heart1 i:nth-child(5){
+    animation-delay:0.2s ;
+}
+.heart1 i:nth-child(6){
+    animation-delay:0.1s ;
+}
+.heart1 i:nth-child(7){
+    animation-delay:0.3s ;
+}
+.heart1 i:nth-child(8){
+    animation-delay:0s ;
+}
+
+
+.scroll_model{
+display:none;
+}
+.scroll_model1{
+    display:block;
+    position:absolute;
+    top:50vh;
+}
+
+ #bannerarea  .item1{
+background-image: linear-gradient(to bottom,yellow,white),url("../img/card1.jpg");}
+
+
+.bg-effect-item::after{
+    content:" ";
+   
+    background-image: linear-gradient(to bottom,yellow,white);
+    
+}
+.form-pin{
+background: #f6f5f5;
+    padding: 8px 8px 8px 30px;
+    position: relative;}
+/*product page styling finish*/
+/* .form-pin::before{
+    content:" " ../images/box-style-3.jpg
+} */
+
+.product-des table td{
+min-width:130px;
+color:black;
+text-align:left;
+margin-top: 10px;
+font-weight: 500;
+
+
+}
+ .fixed-div{
+    height:100px;
+    width:80px;
+    background:linear-gradient(to right,rgb(142, 71, 209),rgb(194, 73, 224)) ;
+    position:fixed;
+    top:50%;
+    right:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:2000000;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+
+
+
 @media screen and (max-width: 1080px) {
     .tm-tab-link-li { width: 25%; }
 }
@@ -927,9 +1106,17 @@ button:hover,
 /*==========================END PROJECT AREA=====================================*/
 
 
-@media screen and (max-width:520px){
+@media screen and (max-width:575px){
     .tm-tab-link {
         padding:5px;
+    }
+    .card-option{
+        display:none;
+    }
+
+    #bannerarea .owl-carousel .owl-dots{
+      display:block;
+  
     }
 
 }
